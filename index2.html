@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yash Rai Transports</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Rai's</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="C:\Users\hp\Desktop\Web dev\BOOTSTRAP\index2.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="C:\Users\hp\Desktop\Web dev\BOOTSTRAP\about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cars</a></li>
+                <li><a class="dropdown-item" href="#">Bikes</a></li>
+                <li><a class="dropdown-item" href="#">Trucks</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Support</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="C:\Users\hp\Desktop\Web dev\BOOTSTRAP\contact_us.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+
+          <div class="mx-2">
+            <button
+              class="btn btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              type="submit"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-outline-success"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+              type="submit"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--login model-->
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Login to account
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Password</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="1"
+              ></textarea>
+            </div>
+            <button
+              id="formSubmit"
+              width="30%"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--signup model-->
+
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signupModalLabel">
+              Create an account
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Password</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="1"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Confirm password</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="1"
+              ></textarea>
+            </div>
+
+            <button
+              id="formSubmit"
+              width="30%"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active">
+          <img
+            src="https://source.unsplash.com/1400x500/?vehicle,transport"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black">Welcome to Rai Transport!</h2>
+            <p>New Sports Bikes and Cars Collection</p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1400x500/?travel,cars"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black">Welcome to Rai Transport!</h2>
+            <p>New Sports Bikes and Cars Collection</p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/1400x500/?travel,bikes"
+            height="600"
+            width="1400"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black">Welcome to Rai Transport!</h2>
+            <p>New Sports Bikes and Cars Collection</p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Trends</strong>
+              <h3 class="mb-0">Sports Cars</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                Rai Transport brings a complete range of new cars in 2023 in
+                India with prices. You can search cars by applying filters such
+                as by price, by bodytype, by brand, by seating capacity & more.
+                <a href="#" class="stretched-link">Continue reading</a>
+              </p>
+            </div>
+
+            <div class="col-auto d-none d-lg-block">
+              <img src="car.jfif" width="200" height="250" alt="car" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">World</strong>
+              <h3 class="mb-0">Sports Bikes</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                Rai transport brings complete range of new bikes in India. You
+                can search bikes by applying filters such as by budget, by
+                preferred price, by bodytype, by brand, by engine cc and
+                features.
+              </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="bike.jfif" width="200" height="250" alt="car" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <style type="text/css">
+        /* Driven */
+        .cw-driven {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          background: #f7f7f7;
+          color: #000;
+        }
+
+        .cw-driven .cw-driven-item {
+          max-width: 100%;
+          -ms-flex-preferred-size: 50%;
+          flex-basis: 100%;
+          min-height: 300px;
+          padding: 5vw;
+        }
+
+        .cw-driven .cw-driven-item h5 {
+          font-size: 2em;
+        }
+
+        .cw-driven .cw-flexImg1 {
+          background: #252525
+            url("https://cdn07.carsforsale.com/CustomTemplatePhotos/1041081/photos/sports-car-collection-store-front.6358ae92.jpeg")
+            no-repeat center bottom;
+          background-size: cover;
+        }
+
+        .cw-driven .cw-flexImg2 {
+          background-size: cover;
+          background-position: center;
+        }
+
+        /* XS: 440px & Up */
+        @media (min-width: 440px) {
+        }
+
+        /* SM: 768px & Up */
+        @media (min-width: 768px) {
+          .cw-reviews {
+            height: 70vh;
+          }
+
+          .cw-reviews h5 {
+            font-size: 3em;
+          }
+
+          .cw-reviews .cw-carouselWrap h5 {
+            font-size: 2em;
+          }
+
+          .cw-driven .cw-driven-item h5 {
+            font-size: 3em;
+          }
+
+          .cw-driven .cw-driven-item p {
+            font-size: 1.25em;
+          }
+
+          .cw-driven .cw-driven-item {
+            max-width: 50%;
+            -ms-flex-preferred-size: 50%;
+          }
+        }
+
+        /* MD: 992px & Up */
+        @media (min-width: 992px) {
+        }
+
+        /* LG: 1200px & Up */
+        @media (min-width: 1200px) {
+          .cw-reviews {
+            height: 60vh;
+          }
+        }
+
+        /* XLG: 1400px & Up */
+        @media (min-width: 1400px) {
+        }
+      </style>
+
+      <div class="cw-driven">
+        <div class="cw-driven-item cw-flexImg1"></div>
+        <div class="cw-driven-item cw-flexImg2">
+          <h5 class="font-primary">Driven By Passion.</h5>
+          <p>
+            FUELED BY ENTHUSIASM. At Sports Car Collection, our love for
+            exceptional automobiles goes hand in hand with our commitment to
+            assisting clients. This combination results in a seamless and
+            enjoyable car buying experience like no other. Our inventory
+            showcases a remarkable selection of premium sports cars and exotic
+            vehicles tailored to meet your preferences. Dependability,
+            exceptional service, and high-end vehicles define Sports Car
+            Collection!
+          </p>
+          <a href="/cars-for-sale" class="btn btn-primary">View Inventory</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ft-bt-sec">
+      <div class="container">
+        <div class="sec-row d-flex justify-content-center align-items-center">
+          <div class="sec-md-col-64 ft-copyright-clmn">
+            <div class="ftcopyright-grp">
+              <p>Copyright © 2023 Rai Transport</p>
+              <ul class="hide-900">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of use</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sec-md-col-36 ft-designedbt-clmn">
+            <br />
+            <p>
+              Website Designed by
+              <a
+                aria-label="Linkedin"
+                href="https://www.linkedin.com/in/yash-rai-421083233/?originalSubdomain=in"
+                target="_blank"
+                ><svg
+                  width="36px"
+                  height="36px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.668 9H10.329A1.314 1.314 0 009 10.297v15.404C9 26.418 9.595 27 10.329 27h15.339c.735 0 1.332-.582 1.332-1.299V10.297A1.317 1.317 0 0025.668 9zm-11.33 15.339h-2.67v-8.59h2.67v8.59zm-1.334-9.765a1.548 1.548 0 110-3.096 1.548 1.548 0 010 3.096zm11.333 9.765h-2.666V20.16c0-.997-.018-2.279-1.388-2.279-1.389 0-1.602 1.087-1.602 2.206v4.25h-2.669v-8.59h2.563v1.173h.034c.357-.675 1.227-1.388 2.526-1.388 2.704 0 3.202 1.78 3.202 4.093v4.713z"
+                    fill="currentColor"
+                  ></path></svg
+                ><span>Yash Rai</span></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
